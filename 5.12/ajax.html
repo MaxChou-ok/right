@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //  ajax  async javascript and xml
+     let xhr = new XMLHttpRequest();//创造实例
+     xhr.open('get','./data.json',true); //false代表同步 true代表异步 默认true
+     xhr.onreadystatechange = function(){
+         //当readystate发生改变的时候 触发该函数
+         console.log(xhr.readyState);
+     }
+     xhr.send()
+    
+</script>
